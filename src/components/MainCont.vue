@@ -13,8 +13,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../assets/styles/variables';
+
 .container {
-  height: 5rem;
+  height: $commongHeight;
   display: flex;
   align-items: center;
   color: white;
