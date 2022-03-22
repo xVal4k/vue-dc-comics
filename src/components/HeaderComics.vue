@@ -7,7 +7,7 @@
     </ul>
   </div>
 </header>
-  </template>
+</template>
 
 <script>
 /* eslint-disable */
@@ -68,14 +68,14 @@ export default {
 
   .active_index {
     border-bottom: solid 3px #0282F9;
-  }  
+  }
 
   li {
     display: inline-block;
-    line-height: 5rem;
+    line-height: 4.8rem;
     a {
       line-height: 1rem;
-      padding: 2rem .5rem;
+      padding: 2.5rem .5rem;
       text-decoration: none;
       font-size: 10px;
     }
