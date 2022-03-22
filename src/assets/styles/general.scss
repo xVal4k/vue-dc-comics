@@ -2,8 +2,22 @@ html {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
 }
+
+header {
+    height: 5rem;
+}
+
+main {
+    height: 5rem;
+    background: #1C1C1C;
+}
+
 .container {
     width: 80%;
     max-width: 1500px;
     margin: 0 auto;
+}
+
+.merch {
+    background: #0282F9;
 }
