@@ -21,3 +21,16 @@ main {
 .merch {
     background: #0282F9;
 }
+
+.footer_socials {
+    background: #303030;
+}
+
+.footer_links {
+    background-image: url(@/assets/img/footer-bg.jpg);
+    background-size: cover;
+    height: 25rem;
+    color: white;
+    padding-top: 2rem;
+    overflow: hidden;
+}
