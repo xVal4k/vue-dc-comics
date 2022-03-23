@@ -15,6 +15,13 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped lang="scss">
+div {
+  width: calc((100% - 6rem) / 6);
+  margin: .5rem;
+}
+img {
+  width: 100%;
+  margin-bottom: .5rem;
+}
 </style>
