@@ -116,11 +116,6 @@ export default {
   text-align: left;
 }
 
-button {
-  cursor: pointer;
-  margin-bottom: 1rem;
-}
-
 button,
 .current_series {
   padding: .5rem 2.5rem;
@@ -128,6 +123,11 @@ button,
   background: #0282F9;
   font-weight: bold;
   border: solid 2px transparent;
+}
+
+button {
+  cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 .current_series {
