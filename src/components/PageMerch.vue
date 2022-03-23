@@ -22,36 +22,36 @@ export default {
     return {
       images: [
         {
-          href: '#',
+          href: '#!',
           src: DCOMICS,
           text: 'DIGITAL COMICS',
           alt: 'buy-comics'
         },
         {
-          href: '#',
+          href: '#!',
           src: DCMerchandise,
           text: 'DC MERCHANDISE',
           alt: 'dc merchandise'
         },
         {
-          href: '#',
+          href: '#!',
           src: ComicsSubs,
           text: 'SUBSCRIPTION',
           alt: 'subscription img'
         },
         {
-          href: '#',
+          href: '#!',
           src: ShopLocator,
           text: 'COMIC SHOP LOCATOR',
           alt: 'position logo'
         },
         {
-          href: '#',
+          href: '#!',
           src: PowerVisa,
           text: 'DC POWER VISA',
           alt: 'visa card'
         },
-      ]     
+      ]
     }
   }
 }
@@ -59,26 +59,28 @@ export default {
 
 <style scoped lang="scss">
 .container {
+  padding: 2rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 7rem;
-}
 
-img {
-  width: 50px;
-  vertical-align: middle;
-}
+  li {
+    display: inline-block;
 
-li {
-  display: inline-block;
-  padding: 2.5rem .5rem;
-  a {
-    line-height: 1rem;
-    text-decoration: none;
-    font-size: 10px;
-    color: white;
-    vertical-align: middle;
+    a {
+      line-height: 1rem;
+      padding: 2rem .5rem;
+      text-decoration: none;
+      font-size: 10px;
+      color: white;
+      vertical-align: middle;
+
+      img {
+        width: 50px;
+        vertical-align: middle;
+      }
+    }
   }
 }
+
 </style>
