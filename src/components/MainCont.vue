@@ -1,11 +1,12 @@
 <template>
 <main>
+  <div class="jumbotron"></div>
   <div class="container">
     <GameCards
      v-for="card in cards"
      :key="card.titolo"
-     :game-src="card.thumb"
-     :game-alt="card.series"
+     :card-src="card.thumb"
+     :card-title="card.series"
     />
   </div>
 </main>
@@ -100,12 +101,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../assets/styles/variables';
-
+.jumbotron {
+  height: 300px;
+  background-image: url(../assets/img/jumbotron.jpg);
+  background-size: cover;
+}
 .container {
-  height: $commongHeight;
+  padding: 3rem 0;
   display: flex;
-  align-items: center;
-  color: white;
+  flex-wrap: wrap;
 }
 </style>
