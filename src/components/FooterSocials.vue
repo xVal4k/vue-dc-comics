@@ -70,7 +70,7 @@ button {
   border: solid 2px #0282F9;
   cursor: pointer;
 }
-  
+
 .socials {
   display: flex;
   align-items: center;
@@ -81,10 +81,10 @@ a {
   font-size: 20px;
   margin-right: 1.5rem;
   color: #0282F9;
-  }
+}
 
 li {
   display: inline-block;
   line-height: 4.8rem;
-}    
+}
 </style>
