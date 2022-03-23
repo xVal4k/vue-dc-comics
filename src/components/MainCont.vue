@@ -1,6 +1,7 @@
 <template>
 <main>
   <div class="jumbotron"></div>
+  <div class="current_series">CURRENT SERIES</div>
   <div class="container">
     <GameCards
      v-for="card in cards"
@@ -9,6 +10,7 @@
      :card-title="card.series"
     />
   </div>
+  <button>LOAD MORE</button>
 </main>
 </template>
 
@@ -106,9 +108,33 @@ export default {
   background-image: url(../assets/img/jumbotron.jpg);
   background-size: cover;
 }
+
 .container {
   padding: 3rem 0;
   display: flex;
   flex-wrap: wrap;
+  text-align: left;
+}
+
+button {
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+button,
+.current_series {
+  padding: .5rem 2.5rem;
+  color: white;
+  background: #0282F9;
+  font-weight: bold;
+  border: solid 2px transparent;
+}
+
+.current_series {
+  line-height: 2rem;
+  position: absolute;
+  font-size: 22px;
+  top: calc(300px - 1.5rem);
+  left: 15%;
 }
 </style>
