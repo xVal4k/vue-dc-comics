@@ -61,27 +61,28 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     img {
       width: 60px;
       margin: .75rem 0;
     }
-  }
 
-  .active_index {
-    border-bottom: solid 5px #0282F9;
-  }
-
-  li {
-    display: inline-block;
-    line-height: 1rem;
-    padding: 2.375rem 0;
-    border-bottom: solid 5px transparent;
-
-    a {
+    li {
+      display: inline-block;
       line-height: 1rem;
-      padding: 2.375rem .75rem;
-      text-decoration: none;
-      font-size: 10px;
+      padding: 2.375rem 0;
+      border-bottom: solid 5px transparent;
+
+      &.active_index {
+      border-bottom: solid 5px #0282F9;
+      }
+
+      a {
+        line-height: 1rem;
+        padding: 2.375rem .75rem;
+        text-decoration: none;
+        font-size: 10px;
+      }
     }
   }
 </style>
