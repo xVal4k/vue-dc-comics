@@ -7,8 +7,6 @@
         <ul>
           <li v-for="(link, index) in DCCOMICS" v-bind:key="index"><a :href="link.href">{{link.text}}</a></li>
         </ul>
-      </div>
-      <div class="col">
         <h3>SHOP</h3>
         <ul>
           <li v-for="(link, index) in SHOP" v-bind:key="index"><a :href="link.href">{{link.text}}</a></li>
@@ -40,112 +38,112 @@ export default {
     return {
       DCCOMICS: [
         {
-          href: '#',
+          href: '#!',
           text: 'Characters'
         },
         {
-          href: '#',
+          href: '#!',
           text: 'Comics'
         },
         {
-          href: '#',
+          href: '#!',
           text: 'Movies'
         },
         {
-          href: '#',
+          href: '#!',
           text: 'TV'
         },
         {
-          href: '#',
+          href: '#!',
           text: 'Games'
         },
         {
-          href: '#',
+          href: '#!',
           text: 'Videos'
         },
         {
-          href: '#',
+          href: '#!',
           text: 'News'
         }
       ],
       SHOP: [
         {
-          href: '#',
+          href: '#!',
           text: 'Shop DC'
         },
         {
-          href: '#',
+          href: '#!',
           text: 'Shop DC Collectibles'
         }
       ],
       DC: [
         {
-          href: '#',
+          href: '#!',
           text: 'Tersm Of Use'
-        },        
+        },
         {
-          href: '#',
+          href: '#!',
           text: 'Privacy policy (New)'
-        },        
+        },
         {
-          href: '#',
+          href: '#!',
           text: 'Ad Choices'
-        },        
+        },
         {
-          href: '#',
+          href: '#!',
           text: 'Advertising'
-        },        
+        },
         {
-          href: '#',
+          href: '#!',
           text: 'Jobs'
-        },        
+        },
         {
-          href: '#',
+          href: '#!',
           text: 'Subscriptions'
-        },        
+        },
         {
-          href: '#',
+          href: '#!',
           text: 'Talent Workshops'
-        },        
+        },
         {
-          href: '#',
+          href: '#!',
           text: 'CPSC Certificates'
-        },        
+        },
         {
-          href: '#',
+          href: '#!',
           text: 'Ratings'
-        },        
+        },
         {
-          href: '#',
+          href: '#!',
           text: 'Shop Help'
-        },        
+        },
         {
-          href: '#',
+          href: '#!',
           text: 'Contact Us'
-        },        
+        },
       ],
       SITES: [
         {
-          href: '#',
+          href: '#!',
           text: 'DC'
         },
         {
-          href: '#',
+          href: '#!',
           text: 'MAD Magazine'
         },
         {
-          href: '#',
+          href: '#!',
           text: 'DC Kids'
         },
         {
-          href: '#',
+          href: '#!',
           text: 'DC Universe'
         },
         {
-          href: '#',
+          href: '#!',
           text: 'DC Power Visa'
         },
-        
+
       ],
 
     }
@@ -157,30 +155,35 @@ export default {
 .container {
   display: flex;
   justify-content: space-between;
-}
 
-.left-side {
-  display: flex;
-}
+  .left-side {
+    display: flex;
+  }
 
-.col {
-  margin-right: 2rem;
-}
+  h3 {
+    margin: 1.5rem 0 .5rem 0;
+  }
 
-img {
-  width: 500px;
-  transform: rotate(-30deg);
-  opacity: .5;
-  position: relative;
-  bottom: 100px;
-}
+  .col {
+    margin-right: 2rem;
+  }
 
-li {
-  display: block;
-  a {
-    color: grey;
-    text-decoration: none;
-    font-size: 12px;
+  img {
+    width: 500px;
+    transform: rotate(-30deg);
+    opacity: .5;
+    position: relative;
+    bottom: 100px;
+  }
+
+  li {
+    display: block;
+
+    a {
+      color: grey;
+      text-decoration: none;
+      font-size: 12px;
+    }
   }
 }
 </style>
